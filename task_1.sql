@@ -1,0 +1,3 @@
+1. select courses.name, teachers.name from courses JOIN teachers on courses.teacher_id = teachers.id 
+2. select teachers.name,courses.teacher_id,count(teacher_id) as course_taken from courses join teachers where courses.teacher_id = teachers.id group by courses.teacher_id, teachers.name order by course_taken DESC LIMIT 1
+3. select distinct teachers.name from teachers where teachers.id not in (select courses.teacher_id from courses)
