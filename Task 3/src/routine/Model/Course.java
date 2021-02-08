@@ -1,7 +1,4 @@
-package pckg_1;
-
-import java.util.ArrayList;
-import java.util.List;
+package routine.Model;
 
 public class Course {
     String courseName;
@@ -11,10 +8,10 @@ public class Course {
         this.courseName = name;
         this.teacherName = teacherName;
     }
-    String getCourseName(){
+    public String getCourseName(){
         return courseName;
     }
-    String getTeacherName(){
+    public String getTeacherName(){
         return teacherName;
     }
 }
